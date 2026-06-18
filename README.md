@@ -4,6 +4,10 @@ Created by FARHEEN TAJ
 
 <img src="./assets/fasnapt-logo.png" alt="FasNapt Logo" width="500"/>
 
+FasNapt Screenshort
+
+<img width="1875" height="910" alt="Image" src="https://github.com/user-attachments/assets/72622d01-ceac-4957-9caf-bd361762cb65" />
+
 ### 🌟 AI-Powered Creator Platform for the Next Generation of Content Creators
 
 **Create • Edit • Analyze • Grow • Scale**

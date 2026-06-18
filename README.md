@@ -10,6 +10,8 @@ FasNapt Screenshort
 
 <img width="1871" height="906" alt="Image" src="https://github.com/user-attachments/assets/38bf7675-b359-4c8e-a154-88ed20830912" />
 
+<img width="1858" height="912" alt="Image" src="https://github.com/user-attachments/assets/2d3f0178-382b-4237-b7e3-3d53cb7dbc99" />
+
 ### 🌟 AI-Powered Creator Platform for the Next Generation of Content Creators
 
 **Create • Edit • Analyze • Grow • Scale**

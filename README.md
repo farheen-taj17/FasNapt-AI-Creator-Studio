@@ -461,4 +461,3 @@ pwa
 docker
 ```
 
-A README alone won't get someone selected for a high-paying job, but a strong README combined with a polished project, clean code, tests, deployment, documentation, and a live demo can significantly improve how recruiters and hiring managers evaluate your work.

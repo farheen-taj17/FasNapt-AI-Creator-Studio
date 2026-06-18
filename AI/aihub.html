@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>FasNapt AI Creator Hub</title>
+
+<link rel="stylesheet" href="aihub.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🤖 FasNapt AI Creator Hub</h1>
+
+<div class="grid">
+
+<div class="card">
+
+<h2>📝 AI Caption Generator</h2>
+
+<input
+type="text"
+id="topicInput"
+placeholder="Enter Topic">
+
+<button onclick="generateCaption()">
+Generate
+</button>
+
+<p id="captionResult"></p>
+
+</div>
+
+<div class="card">
+
+<h2>🏷 AI Hashtag Generator</h2>
+
+<button onclick="generateHashtags()">
+Generate
+</button>
+
+<p id="hashtagResult"></p>
+
+</div>
+
+<div class="card">
+
+<h2>🔥 Viral Score Calculator</h2>
+
+<input
+type="number"
+id="likes"
+placeholder="Likes">
+
+<input
+type="number"
+id="comments"
+placeholder="Comments">
+
+<button onclick="calculateScore()">
+Calculate
+</button>
+
+<p id="viralResult"></p>
+
+</div>
+
+<div class="card">
+
+<h2>💡 Trending Content Ideas</h2>
+
+<button onclick="generateIdea()">
+Generate Idea
+</button>
+
+<p id="ideaResult"></p>
+
+</div>
+
+<div class="card">
+
+<h2>📅 Content Planner</h2>
+
+<input
+type="date"
+id="planner">
+
+<button onclick="savePlan()">
+Save
+</button>
+
+<p id="plannerResult"></p>
+
+</div>
+
+<div class="card">
+
+<h2>🏆 Achievement Badge</h2>
+
+<button onclick="showBadge()">
+Check Badge
+</button>
+
+<p id="badgeResult"></p>
+
+</div>
+
+</div>
+
+<div class="tips">
+
+<h2>🌟 Daily Creator Tip</h2>
+
+<p id="dailyTip"></p>
+
+</div>
+
+</div>
+
+<script src="aihub.js"></script>
+
+</body>
+
+</html>
+

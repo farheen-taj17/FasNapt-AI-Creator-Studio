@@ -1,0 +1,740 @@
+/* ==========================
+   FASNAPT AI CREATOR STUDIO
+   ========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+
+    --primary:#7B2FF7;
+    --secondary:#F107A3;
+    --accent:#00D4FF;
+    --success:#00FF88;
+
+    --dark:#0F172A;
+    --card:rgba(255,255,255,0.12);
+
+    --white:#ffffff;
+
+}
+
+body{
+
+    min-height:100vh;
+    color:white;
+    overflow-x:hidden;
+    background:#0F172A;
+
+}
+
+/* ==========================
+   AURORA BACKGROUND
+   ========================== */
+
+.background{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    z-index:-1;
+
+    background:
+    linear-gradient(
+        -45deg,
+        #7B2FF7,
+        #F107A3,
+        #00D4FF,
+        #00FF88
+    );
+
+    background-size:400% 400%;
+
+    animation:aurora 15s ease infinite;
+
+}
+
+@keyframes aurora{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/* ==========================
+   NAVBAR
+   ========================== */
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+
+}
+
+.logo-section{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.logo{
+
+    width:60px;
+    height:60px;
+
+    object-fit:contain;
+
+}
+
+.logo-section h2{
+
+    font-size:28px;
+    font-weight:700;
+
+}
+
+#themeSelector{
+
+    padding:10px 15px;
+
+    border:none;
+    border-radius:10px;
+
+    outline:none;
+    cursor:pointer;
+
+}
+
+/* ==========================
+   HERO SECTION
+   ========================== */
+
+.hero{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,.5);
+
+}
+
+.hero p{
+
+    font-size:1.2rem;
+
+    opacity:.9;
+
+}
+
+.hero-btn{
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    border:none;
+    border-radius:50px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:1rem;
+    font-weight:600;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    box-shadow:
+    0 0 20px rgba(123,47,247,.5);
+
+    transition:.4s;
+
+}
+
+.hero-btn:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.05);
+
+}
+
+/* ==========================
+   STATS SECTION
+   ========================== */
+
+.stats-section{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    padding:20px 40px;
+
+}
+
+.stat-card{
+
+    background:var(--card);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.stat-card:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 0 25px rgba(255,255,255,.15);
+
+}
+
+.stat-card h2{
+
+    font-size:2.5rem;
+
+    color:var(--accent);
+
+}
+
+/* ==========================
+   TOOL SECTION
+   ========================== */
+
+.tools-section{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:20px;
+
+    padding:40px;
+
+}
+
+.tool-card{
+
+    background:var(--card);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+}
+
+.tool-card h2{
+
+    margin-bottom:20px;
+
+}
+
+.tool-card input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:none;
+    border-radius:10px;
+
+    outline:none;
+
+}
+
+.tool-card button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+    border-radius:10px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+.tool-card p{
+
+    margin-top:15px;
+
+    line-height:1.6;
+
+}
+
+/* ==========================
+   TASK SECTION
+   ========================== */
+
+.task-section{
+
+    padding:40px;
+
+}
+
+.task-section h2{
+
+    margin-bottom:20px;
+
+}
+
+.task-box{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.task-box input{
+
+    flex:1;
+
+    min-width:250px;
+
+    padding:12px;
+
+    border:none;
+    border-radius:10px;
+
+}
+
+.task-box button{
+
+    padding:12px 20px;
+
+    border:none;
+    border-radius:10px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+#taskList{
+
+    margin-top:20px;
+
+    list-style:none;
+
+}
+
+#taskList li{
+
+    background:rgba(255,255,255,.1);
+
+    margin-bottom:10px;
+
+    padding:12px;
+
+    border-radius:10px;
+
+}
+
+/* ==========================
+   GROWTH HUB
+   ========================== */
+
+.growth-section{
+
+    padding:40px;
+
+}
+
+.growth-section h2{
+
+    margin-bottom:25px;
+
+}
+
+.growth-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.growth-card{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    padding:25px;
+
+    text-align:center;
+
+    font-size:1.1rem;
+
+    transition:.4s;
+
+}
+
+.growth-card:hover{
+
+    transform:
+    scale(1.05);
+
+}
+
+/* ==========================
+   FOOTER
+   ========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+#clock{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+    color:var(--success);
+
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+   ========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .stats-section,
+    .tools-section,
+    .growth-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero{
+
+        padding:50px 15px;
+
+    }
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .logo{
+
+        width:50px;
+        height:50px;
+
+    }
+
+}
+
+
+.logo-container{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+.logo{
+
+width:450px;
+
+max-width:90%;
+
+filter:
+drop-shadow(0 0 25px #00D4FF)
+drop-shadow(0 0 40px #7B2FF7);
+
+animation:
+floatLogo 4s ease-in-out infinite;
+
+}
+
+@keyframes floatLogo{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+background:
+linear-gradient(
+135deg,
+#050816,
+#0A0F2C,
+#180A3D
+);
+
+color:white;
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+.hero h1{
+
+font-size:4rem;
+
+background:
+linear-gradient(
+90deg,
+#00D4FF,
+#7B2FF7,
+#FF00AA
+);
+
+background-clip:text;
+	-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+font-size:1.3rem;
+
+opacity:.9;
+
+margin-bottom:30px;
+
+}
+
+.brand{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+}
+
+.brand img{
+
+width:60px;
+
+height:60px;
+
+object-fit:contain;
+
+}
+
+.brand span{
+
+font-size:1.6rem;
+
+font-weight:700;
+
+color:white;
+
+}
+
+
+#loader{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:#000;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+}
+
+.loader-logo{
+
+width:300px;
+
+animation:
+pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.1);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+

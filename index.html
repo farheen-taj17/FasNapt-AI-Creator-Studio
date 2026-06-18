@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FasNapt AI Creator Studio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Animated Background -->
+  <div class="background"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+
+    <div class="logo-section">
+
+      <!-- Replace with your logo -->
+      <img src="assets/logo.png" alt="FasNapt Logo" class="logo">
+
+      <h2>FasNapt</h2>
+
+    </div>
+
+    <div class="nav-right">
+
+      <select id="themeSelector">
+
+        <option value="aurora">Aurora</option>
+        <option value="cyber">Cyber Neon</option>
+        <option value="sunset">Sunset</option>
+        <option value="ocean">Ocean</option>
+
+      </select>
+
+    </div>
+
+  </nav>
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+
+    <h1>
+      🚀 Create • Edit • Grow
+    </h1>
+
+    <p>
+      AI Powered Creator Studio For Modern Content Creators
+    </p>
+
+    <button class="hero-btn">
+      Start Creating
+    </button>
+
+  </section>
+
+  <!-- Dashboard Cards -->
+
+  <section class="stats-section">
+
+    <div class="stat-card">
+
+      <h2 id="views">0</h2>
+
+      <p>Total Views</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h2 id="followers">0</h2>
+
+      <p>Followers</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h2 id="likes">0</h2>
+
+      <p>Likes</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h2 id="videos">0</h2>
+
+      <p>Videos Created</p>
+
+    </div>
+
+  </section>
+
+  <!-- AI Creator Hub -->
+
+  <section class="tools-section">
+
+    <div class="tool-card">
+
+      <h2>📝 AI Caption Generator</h2>
+
+      <input
+        type="text"
+        id="topicInput"
+        placeholder="Enter Topic">
+
+      <button onclick="generateCaption()">
+        Generate Caption
+      </button>
+
+      <p id="captionResult"></p>
+
+    </div>
+
+    <div class="tool-card">
+
+      <h2>🏷 AI Hashtag Generator</h2>
+
+      <button onclick="generateHashtags()">
+        Generate Hashtags
+      </button>
+
+      <p id="hashtagResult"></p>
+
+    </div>
+
+    <div class="tool-card">
+
+      <h2>📅 Content Planner</h2>
+
+      <input
+        type="date"
+        id="plannerDate">
+
+      <button onclick="savePlan()">
+        Save Plan
+      </button>
+
+      <p id="plannerResult"></p>
+
+    </div>
+
+  </section>
+
+  <!-- Daily Tasks -->
+
+  <section class="task-section">
+
+    <h2>🎯 Daily Creator Tasks</h2>
+
+    <div class="task-box">
+
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter Task">
+
+      <button onclick="addTask()">
+        Add Task
+      </button>
+
+    </div>
+
+    <ul id="taskList"></ul>
+
+  </section>
+
+  <!-- Creator Growth Hub -->
+
+  <section class="growth-section">
+
+    <h2>📈 Creator Growth Hub</h2>
+
+    <div class="growth-grid">
+
+      <div class="growth-card">
+        🔥 Trending Topics
+      </div>
+
+      <div class="growth-card">
+        🤖 AI Suggestions
+      </div>
+
+      <div class="growth-card">
+        🎯 Content Planner
+      </div>
+
+      <div class="growth-card">
+        🏆 Achievements
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Live Clock -->
+
+  <footer>
+
+    <div id="clock"></div>
+
+    <p>
+      © 2026 FasNapt AI Creator Studio
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+<link rel="manifest" href="manifest.json">
+
+
+
+<header class="hero">
+
+    <div class="logo-container">
+
+        <img
+        src="assets/fasnapt-logo.png"
+        alt="FasNapt Logo"
+        class="logo">
+
+    </div>
+
+    <h1>
+        FasNapt AI Creator Studio
+    </h1>
+
+    <p>
+        Create • Edit • Grow • Analyze
+    </p>
+
+    <button class="start-btn">
+        Get Started
+    </button>
+
+</header>
+
+
+<nav>
+
+<div class="brand">
+
+<img
+src="assets/fasnapt-logo.png"
+alt="FasNapt">
+
+<span>FasNapt</span>
+
+</div>
+
+</nav>
+
+<div id="loader">
+
+<img
+src="assets/fasnapt-logo.png"
+class="loader-logo">
+
+</div>
+
+
